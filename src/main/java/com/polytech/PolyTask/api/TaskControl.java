@@ -1,0 +1,74 @@
+package com.polytech.PolyTask.api;
+
+import com.polytech.PolyTask.application.*;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.web.bind.annotation.*;
+
+import java.security.Principal;
+import java.util.List;
+
+@RestController
+public class TaskControl {
+
+
+    @Autowired
+    FeedService feedService;
+
+    @Autowired
+    RegisterService registerService;
+
+    @Autowired
+    PublicationService publicationService;
+
+    @GetMapping("/feed")
+    public List<Task> feed() {
+        return feedService.fetchAll();
+    }
+
+    @PostMapping("/test_users")
+    public void user(@RequestBody User user) throws UsernameAlreadyExistsException {
+            user.setEnabled(1);
+            user.setPassword(new BCryptPasswordEncoder().encode(user.getPassword()));
+            System.out.println(user.toString());
+            System.out.println("chemin user");
+            registerService.insert_user(user);
+            Authority authority =new Authority(user.getUsername(),"admin");
+            registerService.insert_authority(authority);
+    }
+
+    @PostMapping("/task")
+    public List<Task> task(@RequestBody String content){
+        System.out.print("contenue : ");
+        System.out.println(content);
+        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+        String Name = authentication.getName();
+        System.out.println(Name);
+        Task task = new Task(content,Name);
+        System.out.println(task.toString());
+        publicationService.share(task);
+        System.out.println("test story");
+        return feedService.fetchAll();
+    }
+
+    @PostMapping("/delete")
+    public List<Task> delete_story(@RequestBody int id) {
+        publicationService.delete_task(id);
+        return feedService.fetchAll();
+    }
+
+    @PostMapping("/modif/{id_task}")
+    public List<Task> modif(@PathVariable("id_task") int id, @RequestBody String s) {
+        publicationService.modif(id,s);
+        return feedService.fetchAll();
+
+    }
+
+    @PostMapping("/done")
+    public List<Task> done(@RequestBody int id){
+        publicationService.done(id);
+        return feedService.fetchAll();
+    }
+}
