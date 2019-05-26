@@ -1,101 +1,64 @@
-<!DOCTYPE html>
-<html ng-app="PolyTask">
+<!doctype html>
+<html lang="fr" ng-app="PolyTask">
 <head>
-    <meta charset="UTF-8">
-    <title>Polytask</title>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"> <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
+
+    <meta charset="utf-8">
+    <title>ToDo List</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="lib/style.css" media="all" />
+
     <script src="index.js"></script>
-    <style>
-        body {
-            padding-top: 50px;
-        }
-        .starter-template {
-            padding: 40px 15px;
-            text-align: center;
-        }
-    </style>
 </head>
-<body>
-
-bs3-pan
-
-<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">PolyTask</a>
-        </div>
-        <div class="collapse navbar-collapse">
-        </div><!--/.nav-collapse -->
-    </div>
-</div>
+<body ng-controller="MainController">
 <div class="container">
-    <div ng-controller="mainController">
-        <div class="input-group">
-            <input type="text" class="form-control" placeholder="nouveau élèment"  ng-model="Story.text">
-            <span class="input-group-btn">
-        <button type="submit" ng-click="createTask()" class="btn btn-primary">insérer</button>
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <span class="glyphicon glyphicon-list"></span>ToDo List
+                </div>
+                <div class="panel-body">
+                    <div class="list-group-item">
+                        <form class="form-inline">
+                            <label for="input">Ajouter une tache : </label>
+                            <div class="form-group mx-sm-3 mb-2">
 
-      </span>
-        </div>
-
-        <div class="panel panel-default">
-
-            <!-- Table -->
-            <table class="table">
-                <tbody>
-                <tr ng-repeat="x in laliste">
-                    <div></div>
-                    <td>
-                        <div>
-                            <button ng-click="delete_task(x.id)" class="btn btn-primary">X</button>
-                            {{x.content}}
+                                <input type="input" class="form-control" id="input" placeholder="Nom de la tache" ng-model="task.text">
+                            </div>
+                            <button type="submit" class="btn btn-success btn-circle btn-sm" ng-click="createTask()"><span class="glyphicon glyphicon-plus" ></span></button>
+                        </form>
+                    </div>
+                    <ul class="list-group" ng-repeat="y in laliste">
+                        <li class="list-group-item" >
+                            <div class="checkbox mb-3">
+                                <input type="checkbox" id="checkbox" ng-checked="y.done"/>
+                                <label for="checkbox">
+                                    {{y.content}}
+                                </label>
+                            </div>
+                            <div class="pull-right action-buttons">
+                                <button type="button" class="btn btn-info btn-circle btn-sm" data-toggle="collapse" data-target="#{{$index}}" aria-expanded="false" aria-controls="$index"><span class="glyphicon glyphicon-pencil" ></span></button>
+                                <button type="button" class="btn btn-danger btn-circle btn-sm" ng-click="delete_task(y.id)"><i class="glyphicon glyphicon-trash"></i></button>
+                            </div>
+                        </li>
+                        <div class="collapse" id="{{$index}}">
+                            <li class="list-group-item">
+                                <form class="form-inline pull-right">
+                                    <div class="form-group mx-sm-3 mb-2">
+                                        <input type="text" class="form-control" placeholder="nouveau élèment"  ng-model="Modif.text">
+                                    </div>
+                                    <button type="submit" class="btn btn-success btn-circle btn-sm" ng-click="modif_task(y.id)" ><span class="glyphicon glyphicon-pencil"></span></button>
+                                </form>
+                            </li>
                         </div>
-                    </td>
-                </tr>
-                </tbody>
-            </table>
-        </div>
-        <div class="panel panel-default" ng-repeat="y in laliste">
-            <div class="panel-heading">
-                <button ng-click="delete_task(y.id)" class="btn btn-primary pull-left">X</button>
-                <h1 class="panel-title pull-center">{{y.content}} </h1>
-                <button ng-click="modif_task(y.id)" class="btn btn-primary pull-right">modifier</button>
-                <button ng-click="done(y.id)" class="btn btn-primary pull-right">done</button>
+                    </ul>
+                </div>
             </div>
         </div>
-
-        <table id ="listetache" class="table table-bordered table-striped">
-            <thead align="center">
-            <tr>
-                <th style="width:10%;" scope="col">Supprimer</th>
-                <th style="width:80%;" scope="col">Tâche :</th>
-                <th style="width:10%;" scope="col">Modifier</th>
-            </tr>
-            </thead>
-            <tr ng-repeat="x in laliste" >
-            <h5>
-                <div >
-                    <th scope="col"><button ng-click="deleteTodo(x._id)" class="btn btn-danger" > Supprimer </button> </th>
-                    <th scope="col" ng-style="x.done && { 'text-decoration' : 'line-through' }">
-                        <div class="text-center" id="xtext-{{$index}}" style="display: block;" ng-style="x.done && { 'text-decoration' : 'line-through' }">
-                            {{ x.content }}
-                        </div>
-                        <div id="xtextmodify-{{$index}}" style="display: none;">
-                            <input type="text" class="form-control" name="text" ng-model="modifyData.text">
-                        </div>
-                    </th>
-                    <th scope="col"><button id="modify-{{$index}}" ng-click="modifier($index, x)" class="btn btn-primary">modifier</button></th>
-                </div>
-            </h5>
-            </tr>
-        </table>
     </div>
 </div>
 

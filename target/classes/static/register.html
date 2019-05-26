@@ -17,7 +17,6 @@
     angular.module('PolyTaskUser', []).controller('userController',function($scope,$http){
 
         $scope.create_user = function(){
-            console.log("test user")
             var user = {
                 username :$scope.username.text,
                 password : $scope.password.text
@@ -29,10 +28,9 @@
             }).then(function successCallback(response) {
                 window.location.href="feed.html"
             }, function errorCallback(response) {
-                console.error(response.error);
+                alert(response.data.message)
             });
         }
-
     });
 </script>
 </html>

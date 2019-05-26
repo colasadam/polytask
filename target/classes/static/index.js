@@ -1,5 +1,6 @@
-angular.module('PolyTask', []).controller('mainController',function($scope,$http){
-
+angular.module('PolyTask', []).controller('MainController',function($scope,$http){
+    $scope.Modif = {
+    };
     $http({
         method: 'GET',
         url: '/feed'
@@ -14,13 +15,13 @@ angular.module('PolyTask', []).controller('mainController',function($scope,$http
 
     $scope.createTask = function(){
         console.log("test create task");
-        console.log($scope.Story.text)
+        console.log($scope.task.text)
         $http({
             method: 'POST',
             url: '/task/',
-            data : $scope.Story.text
+            data : $scope.task.text
         }).then(function successCallback(response) {
-            $scope.Story = {};
+            $scope.task = {};
             $scope.laliste = response.data;
         }, function errorCallback(response) {
             console.error(response.error);
@@ -40,11 +41,12 @@ angular.module('PolyTask', []).controller('mainController',function($scope,$http
     };
 
     $scope.modif_task= function(id_task){
+        console.log(id_task)
+        console.log($scope.Modif)
         $http({
             method: 'POST',
             url: '/modif/' + id_task,
-            data: "test"
-
+            data: $scope.Modif.text
         }).then(function successCallback(response) {
             //$scope.Com = {};
             $scope.laliste = response.data;

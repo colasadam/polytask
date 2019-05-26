@@ -1,0 +1,62 @@
+.panel-body {
+     padding:0px;
+     }
+.panel-footer .pagination { 
+    margin: 0; 
+}
+.panel .glyphicon,.list-group-item .glyphicon { 
+    margin-right:5px; 
+}
+.panel-body .radio, .checkbox {
+     display:inline-block;
+     margin:0px; 
+    }
+.panel-body input[type=checkbox]:checked + label { 
+    text-decoration: line-through;
+    color: rgb(128, 144, 160); 
+}
+.list-group-item:hover, a.list-group-item:focus {
+    text-decoration: none;
+    background-color: rgb(245, 245, 245);
+}
+.list-group { 
+    margin-bottom:0px; 
+}
+
+body{
+    margin-top:20px;
+    background-color:white;
+    background-image:url(img/fond.jpg);
+    font-family: Arial, sans-serif  ;
+}
+
+li{
+    height: 5rem;
+}
+
+.checkbox{
+    margin-top: 0.5rem;
+}
+
+.btn-circle {
+    width: 30px;
+    height: 30px;
+    padding: 6px 0px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.42857;
+}
+
+#ajout{
+    margin-bottom: 1rem;
+    margin-top: 0.2rem;
+}
+
+.panel-primary>.panel-heading {
+    background-color: #42b1ca;
+}
+
+.panel-primary {
+    border-color: #f0f0f0;
+}
