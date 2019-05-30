@@ -2,35 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="41483d0b-5cc2-40ed-934c-d6ca17efa17c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/target/PolyTask-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/PolyTask-1.0-SNAPSHOT.jar.original" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/polytech/PolyTask/AppConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/polytech/PolyTask/AppStarter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/polytech/PolyTask/SecurityConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/polytech/PolyTask/api/TaskControl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/polytech/PolyTask/application/Authority$AuthorityId.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/polytech/PolyTask/application/Authority.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/polytech/PolyTask/application/FeedService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/polytech/PolyTask/application/FeedServiceImp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/polytech/PolyTask/application/PublicationService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/polytech/PolyTask/application/PublicationServiceImp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/polytech/PolyTask/application/RegisterService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/polytech/PolyTask/application/RegisterServiceImp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/polytech/PolyTask/application/Task.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/polytech/PolyTask/application/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/polytech/PolyTask/application/UsernameAlreadyExistsException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/polytech/PolyTask/data/JpaTaskRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/polytech/PolyTask/data/TaskRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/feed.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/img/fond.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/register.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/PolyTask-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/PolyTask-1.0-SNAPSHOT.jar.original" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/polytech/PolyTask/AppConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/polytech/PolyTask/AppStarter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/polytech/PolyTask/SecurityConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/polytech/PolyTask/api/TaskControl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/polytech/PolyTask/application/Authority$AuthorityId.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/polytech/PolyTask/application/Authority.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/polytech/PolyTask/application/FeedService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/polytech/PolyTask/application/FeedServiceImp.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/polytech/PolyTask/application/PublicationService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/polytech/PolyTask/application/PublicationServiceImp.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/polytech/PolyTask/application/RegisterService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/polytech/PolyTask/application/RegisterServiceImp.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/polytech/PolyTask/application/Task.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/polytech/PolyTask/application/User.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/polytech/PolyTask/application/UsernameAlreadyExistsException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/polytech/PolyTask/data/JpaTaskRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/polytech/PolyTask/data/TaskRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/feed.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/lib/img/fond.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/lib/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/register.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -169,7 +169,11 @@
       </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.idea/vcs.xml">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="10" lean-forward="true" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -383,7 +387,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1558160114885</updated>
-      <workItem from="1558160118841" duration="52750000" />
+      <workItem from="1558160118841" duration="52993000" />
     </task>
     <task id="LOCAL-00001" summary="first">
       <created>1558715117119</created>
@@ -420,11 +424,25 @@
       <option name="project" value="LOCAL" />
       <updated>1559206706851</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="test heroku2">
+      <created>1559206814548</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1559206814548</updated>
+    </task>
+    <task id="LOCAL-00007" summary="test heroku3">
+      <created>1559206913404</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1559206913404</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52750000" />
+    <option name="totallyTimeSpent" value="52993000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="23" y="23" width="1417" height="782" extended-state="0" />
@@ -468,7 +486,9 @@
     <MESSAGE value="la belle todolist de gabrielle" />
     <MESSAGE value="t" />
     <MESSAGE value="test heroku" />
-    <option name="LAST_COMMIT_MESSAGE" value="test heroku" />
+    <MESSAGE value="test heroku2" />
+    <MESSAGE value="test heroku3" />
+    <option name="LAST_COMMIT_MESSAGE" value="test heroku3" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/PolyTask$AppStarter.ic" NAME="AppStarter Coverage Results" MODIFIED="1558352383003" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
@@ -794,7 +814,11 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/.idea/vcs.xml">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="10" lean-forward="true" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
+        </state>
+      </provider>
     </entry>
   </component>
   <component name="masterDetails">

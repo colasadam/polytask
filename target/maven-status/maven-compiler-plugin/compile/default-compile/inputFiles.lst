@@ -1,0 +1,16 @@
+/Users/adamcolas/Desktop/polytech/4A/Sem8/PolyTask/src/main/java/com/polytech/PolyTask/application/RegisterService.java
+/Users/adamcolas/Desktop/polytech/4A/Sem8/PolyTask/src/main/java/com/polytech/PolyTask/data/TaskRepository.java
+/Users/adamcolas/Desktop/polytech/4A/Sem8/PolyTask/src/main/java/com/polytech/PolyTask/SecurityConfig.java
+/Users/adamcolas/Desktop/polytech/4A/Sem8/PolyTask/src/main/java/com/polytech/PolyTask/application/FeedServiceImp.java
+/Users/adamcolas/Desktop/polytech/4A/Sem8/PolyTask/src/main/java/com/polytech/PolyTask/application/FeedService.java
+/Users/adamcolas/Desktop/polytech/4A/Sem8/PolyTask/src/main/java/com/polytech/PolyTask/application/PublicationServiceImp.java
+/Users/adamcolas/Desktop/polytech/4A/Sem8/PolyTask/src/main/java/com/polytech/PolyTask/AppStarter.java
+/Users/adamcolas/Desktop/polytech/4A/Sem8/PolyTask/src/main/java/com/polytech/PolyTask/AppConfig.java
+/Users/adamcolas/Desktop/polytech/4A/Sem8/PolyTask/src/main/java/com/polytech/PolyTask/application/RegisterServiceImp.java
+/Users/adamcolas/Desktop/polytech/4A/Sem8/PolyTask/src/main/java/com/polytech/PolyTask/application/User.java
+/Users/adamcolas/Desktop/polytech/4A/Sem8/PolyTask/src/main/java/com/polytech/PolyTask/application/UsernameAlreadyExistsException.java
+/Users/adamcolas/Desktop/polytech/4A/Sem8/PolyTask/src/main/java/com/polytech/PolyTask/application/PublicationService.java
+/Users/adamcolas/Desktop/polytech/4A/Sem8/PolyTask/src/main/java/com/polytech/PolyTask/api/TaskControl.java
+/Users/adamcolas/Desktop/polytech/4A/Sem8/PolyTask/src/main/java/com/polytech/PolyTask/application/Task.java
+/Users/adamcolas/Desktop/polytech/4A/Sem8/PolyTask/src/main/java/com/polytech/PolyTask/data/JpaTaskRepository.java
+/Users/adamcolas/Desktop/polytech/4A/Sem8/PolyTask/src/main/java/com/polytech/PolyTask/application/Authority.java
