@@ -41,15 +41,13 @@ angular.module('PolyTask', []).controller('MainController',function($scope,$http
     };
 
     $scope.modif_task= function(id_task){
-        console.log(id_task)
-        console.log($scope.Modif)
         $http({
             method: 'POST',
             url: '/modif/' + id_task,
             data: $scope.Modif.text
         }).then(function successCallback(response) {
-            //$scope.Com = {};
             $scope.laliste = response.data;
+            $scope.Modif= {}
         }, function errorCallback(response) {
             console.error(response.error);
         })

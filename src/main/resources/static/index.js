@@ -47,6 +47,8 @@ angular.module('PolyTask', []).controller('MainController',function($scope,$http
             data: $scope.Modif.text
         }).then(function successCallback(response) {
             $scope.laliste = response.data;
+            $scope.Modif
+                = {}
         }, function errorCallback(response) {
             console.error(response.error);
         })
