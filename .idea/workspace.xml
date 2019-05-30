@@ -1,7 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="41483d0b-5cc2-40ed-934c-d6ca17efa17c" name="Default Changelist" comment="" />
+    <list default="true" id="41483d0b-5cc2-40ed-934c-d6ca17efa17c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/target/PolyTask-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/PolyTask-1.0-SNAPSHOT.jar.original" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/polytech/PolyTask/AppConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/polytech/PolyTask/AppStarter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/polytech/PolyTask/SecurityConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/polytech/PolyTask/api/TaskControl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/polytech/PolyTask/application/Authority$AuthorityId.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/polytech/PolyTask/application/Authority.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/polytech/PolyTask/application/FeedService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/polytech/PolyTask/application/FeedServiceImp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/polytech/PolyTask/application/PublicationService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/polytech/PolyTask/application/PublicationServiceImp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/polytech/PolyTask/application/RegisterService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/polytech/PolyTask/application/RegisterServiceImp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/polytech/PolyTask/application/Task.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/polytech/PolyTask/application/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/polytech/PolyTask/application/UsernameAlreadyExistsException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/polytech/PolyTask/data/JpaTaskRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/polytech/PolyTask/data/TaskRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/feed.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/img/fond.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/register.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -262,11 +292,6 @@
               <item name="PolyTask" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="PolyTask" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PolyTask" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -358,7 +383,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1558160114885</updated>
-      <workItem from="1558160118841" duration="52509000" />
+      <workItem from="1558160118841" duration="52750000" />
     </task>
     <task id="LOCAL-00001" summary="first">
       <created>1558715117119</created>
@@ -388,11 +413,18 @@
       <option name="project" value="LOCAL" />
       <updated>1559206309058</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="test heroku">
+      <created>1559206706850</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1559206706851</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52509000" />
+    <option name="totallyTimeSpent" value="52750000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="23" y="23" width="1417" height="782" extended-state="0" />
