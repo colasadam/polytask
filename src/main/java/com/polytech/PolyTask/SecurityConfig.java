@@ -30,7 +30,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .mvcMatchers("/").permitAll()
                 .mvcMatchers("/register.html").permitAll()
                 .mvcMatchers("/test_users").permitAll()
-                .mvcMatchers("/netdna.bootstrapcdn.com/*").permitAll()
                 .anyRequest().authenticated()
                 .mvcMatchers("/admin/*").hasRole("ADMIN")
                 .mvcMatchers("/about","help","register").permitAll()
