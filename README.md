@@ -1,10 +1,10 @@
 # Polytask
 
-cette application permet de créer, modifier et supprimer des tâches 
+Cette application permet de créer, modifier et supprimer des tâches 
 
 ## Pour commencer
 
-rendez-vous sur notre [site](https://spring-colas-chastain.herokuapp.com/)
+Rendez-vous sur notre [site](https://spring-colas-chastain.herokuapp.com/)
 
 
 ## Construit avec
@@ -12,6 +12,7 @@ rendez-vous sur notre [site](https://spring-colas-chastain.herokuapp.com/)
 * [Maven](https://maven.apache.org/)
 * [Spring](https://spring.io)
 * [Bootstrap](https://getbootstrap.com)
+* [Heroku](https://www.heroku.com/)
 
 
 ## Auteurs
