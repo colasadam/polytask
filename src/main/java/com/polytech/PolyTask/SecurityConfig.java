@@ -30,14 +30,21 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .mvcMatchers("/lib/*").permitAll()
                 .mvcMatchers("/").permitAll()
                 .mvcMatchers("/register.html").permitAll()
+                .mvcMatchers("/login*").permitAll()
                 .mvcMatchers("/test_users").permitAll()
                 .anyRequest().authenticated()
                 .mvcMatchers("/admin/*").hasRole("ADMIN")
                 .mvcMatchers("/about","help","register").permitAll()
                 .and()
                 .formLogin()
+                .loginPage("/login.html")
+                .defaultSuccessUrl("/feed.html").permitAll()
+                .loginProcessingUrl("/login")
+                .and().logout().logoutUrl("/logout").permitAll().logoutSuccessUrl("/")
+
                 .and()
                 .csrf().disable();
+
     }
 }
 
