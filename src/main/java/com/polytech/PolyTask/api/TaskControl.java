@@ -32,8 +32,6 @@ public class TaskControl {
     public void user(@RequestBody User user) throws UsernameAlreadyExistsException {
             user.setEnabled(1);
             user.setPassword(new BCryptPasswordEncoder().encode(user.getPassword()));
-            System.out.println(user.toString());
-            System.out.println("chemin user");
             registerService.insert_user(user);
             Authority authority =new Authority(user.getUsername(),"admin");
             registerService.insert_authority(authority);
@@ -41,15 +39,10 @@ public class TaskControl {
 
     @PostMapping("/task")
     public List<Task> task(@RequestBody String content){
-        System.out.print("contenue : ");
-        System.out.println(content);
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
         String Name = authentication.getName();
-        System.out.println(Name);
         Task task = new Task(content,Name);
-        System.out.println(task.toString());
         publicationService.share(task);
-        System.out.println("test story");
         return feedService.fetchAll();
     }
 

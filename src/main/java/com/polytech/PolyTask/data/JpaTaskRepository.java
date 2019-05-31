@@ -47,7 +47,6 @@ public class JpaTaskRepository implements TaskRepository{
     @Override
     public void modif(int id, String s) {
         Task task = entityManager.find(Task.class,id);
-        System.out.println(task.toString());
         task.setContent(s);
     }
 

@@ -17,7 +17,6 @@ public class PublicationServiceImp implements PublicationService {
     @Override
 
     public void share(Task task) {
-        System.out.println("test Puvlication Service");
         taskRepository.save(task);
     }
 

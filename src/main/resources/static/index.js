@@ -5,7 +5,6 @@ angular.module('PolyTask', []).controller('MainController',function($scope,$http
         method: 'GET',
         url: '/feed'
     }).then(function successCallback(response) {
-        console.log("Sucess ?");
         $scope.laliste = response.data;
         console.log(response);
     }, function errorCallback(response) {
@@ -14,8 +13,6 @@ angular.module('PolyTask', []).controller('MainController',function($scope,$http
 
 
     $scope.createTask = function(){
-        console.log("test create task");
-        console.log($scope.task.text)
         $http({
             method: 'POST',
             url: '/task/',
