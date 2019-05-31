@@ -2,26 +2,19 @@
 
 cette application permet de créer, modifier et supprimer des tâches 
 
-## Getting Started
+## Pour commencer
 
-rendez-vous sur notre site(https://spring-colas-chastain.herokuapp.com/)
+rendez-vous sur notre [site](https://spring-colas-chastain.herokuapp.com/)
 
-### Prerequisites
 
-What things you need to install the software and how to install them
-
-```
-Give examples
-```
-
-## Built With
+## Construit avec
 
 * [Maven](https://maven.apache.org/)
-* [Spring]
-* [Bootstrap] 
+* [Spring](https://spring.io)
+* [Bootstrap](https://getbootstrap.com)
 
 
-## Authors
+## Auteurs
 
 * **Gabrielle Chastain**
 * **Adam Colas**
