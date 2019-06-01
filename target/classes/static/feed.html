@@ -53,11 +53,7 @@
                     </div>
                     <ul class="list-group" ng-repeat="y in laliste">
                         <li class="list-group-item" >
-                            <div class="pull-left">
-                                <label for="checkbox">
-                                    {{y.date}}
-                                </label>
-                            </div>
+                                {{y.date}}
                             <div class="checkbox mb-3">
                                 <input type="checkbox" id="checkbox" ng-checked="y.done"/>
                                 <label for="checkbox">
@@ -65,6 +61,9 @@
                                 </label>
                             </div>
                             <div class="pull-right action-buttons">
+                                <label for="checkbox">
+                                    {{y.date}}
+                                </label>
                                 <button type="button" class="btn btn-info btn-circle btn-sm" data-toggle="collapse" data-target="#{{$index}}" aria-expanded="false" aria-controls="$index"><span class="glyphicon glyphicon-pencil" ></span></button>
                                 <button type="button" class="btn btn-danger btn-circle btn-sm" ng-click="delete_task(y.id)"><i class="glyphicon glyphicon-trash"></i></button>
                             </div>
