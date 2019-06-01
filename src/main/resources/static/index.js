@@ -13,10 +13,7 @@ angular.module('PolyTask', []).controller('MainController',function($scope,$http
 
     $scope.createTask = function(){
         var todayTime = new Date();
-        console.log(todayTime)
         var date = todayTime.toLocaleDateString()
-        console.log(date)
-
         var task ={
             content : $scope.task.text,
             date : date
