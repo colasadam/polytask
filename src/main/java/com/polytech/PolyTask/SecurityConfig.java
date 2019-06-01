@@ -27,7 +27,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         //mettre avant le authenticated() toutes les pages qui n'ont pas besoin d'authentifiaction
         //ceux qui n'ont pas besoin d'authentification pas besoin de les déclarer
         http.authorizeRequests()
-                .mvcMatchers("/lib/*").permitAll()
+                .mvcMatchers("/lib/**").permitAll()
                 .mvcMatchers("/").permitAll()
                 .mvcMatchers("/register.html").permitAll()
                 .mvcMatchers("/login*").permitAll()
