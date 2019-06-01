@@ -17,7 +17,7 @@ Rendez-vous sur notre [site](https://spring-colas-chastain.herokuapp.com/)
 
 ## Auteurs
 
-* **Gabrielle Chastain**
+* **Gabrielle Chastaing**
 * **Adam Colas**
 
 
