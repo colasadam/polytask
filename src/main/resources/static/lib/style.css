@@ -24,7 +24,7 @@
 }
 
 body{
-    margin-top:20px;
+    margin-top:70px;
     background-color:white;
     background-image:url(img/fond.jpg);
     font-family: Arial, sans-serif  ;
@@ -83,51 +83,4 @@ a{
     margin-top: 0.4rem;
     margin-right: 0.6rem;
     font-weight: bold;
-}
-
-#accueil {
-    color:inherit;
-    text-decoration: none;
-}
-body {
-    padding-top: 50px;
-}
-.starter-template {
-    padding: 40px 15px;
-    text-align: center;
-}
-.copyright {
-    text-align: center;
-    font-size: 0.8em;
-    letter-spacing: 0;
-    line-height: 1.65em;
-    font-weight: 400;
-    opacity: 0.75;
-}
-
-.checkbox{
-    margin-top: 0.5rem;
-}
-
-.btn-circle {
-    width: 30px;
-    height: 30px;
-    padding: 6px 0px;
-    border-radius: 15px;
-    text-align: center;
-    font-size: 12px;
-    line-height: 1.42857;
-}
-
-#ajout{
-    margin-bottom: 1rem;
-    margin-top: 0.2rem;
-}
-
-.panel-primary>.panel-heading {
-    background-color: #42b1ca;
-}
-
-.panel-primary {
-    border-color: #f0f0f0;
 }
