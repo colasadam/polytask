@@ -5,6 +5,7 @@ import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 
 import javax.persistence.*;
+import java.util.Date;
 
 @Entity()
 @Table(name = "task")
@@ -21,6 +22,9 @@ public class Task {
     @Column(name="done")
     private int done;
 
+    @Column(name="date")
+    private Date date;
+
     public Task(int id, String content) {
         this.id = id;
         this.content = content;
@@ -34,6 +38,22 @@ public class Task {
         this.content = content;
         this.username = username;
     }
+
+    public Task(){
+    }
+
+    public void setDone(int done) {
+        this.done = done;
+    }
+
+    public Date getDate() {
+        return date;
+    }
+
+    public void setDate(Date date) {
+        this.date = date;
+    }
+
 
     public int getDone() {
         return done;
@@ -61,9 +81,7 @@ public class Task {
         this.username = username;
     }
 
-    public Task(){
 
-    }
 
     public int getId() {
         return id;

@@ -38,10 +38,10 @@ public class TaskControl {
     }
 
     @PostMapping("/task")
-    public List<Task> task(@RequestBody String content){
+    public List<Task> task(@RequestBody Task task){
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
         String Name = authentication.getName();
-        Task task = new Task(content,Name);
+        task.setUsername(Name);
         publicationService.share(task);
         return feedService.fetchAll();
     }
