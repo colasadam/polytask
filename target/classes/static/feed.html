@@ -56,7 +56,7 @@
                             <div class="pull-left" id="date">
                                 {{y.date}}
                             </div>
-                            <div class="checkbox">
+                            <div class="checkbox mb-3">
                                 <input type="checkbox" id="checkbox" ng-checked="y.done" ng-click="done(y.id)"/>
                                 <label for="checkbox">
                                     {{y.content}}
@@ -68,7 +68,7 @@
                             </div>
                         </li>
                         <div class="collapse" id="{{$index}}">
-                            <li class="list-group-item">
+                            <li class="list-group-item" style="overflow: hidden;">
                                 <form class="form-inline pull-right">
                                     <div class="form-group mx-sm-3 mb-2">
                                         <input type="text" class="form-control" placeholder="nouveau élèment"  ng-model="Modif.text">
