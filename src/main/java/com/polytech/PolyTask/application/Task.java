@@ -20,7 +20,7 @@ public class Task {
     private String username;
 
     @Column(name="done")
-    private int done;
+    private boolean done;
 
     @Column(name="date")
     private String date;
@@ -42,7 +42,7 @@ public class Task {
     public Task(){
     }
 
-    public void setDone(int done) {
+    public void setDone(boolean done) {
         this.done = done;
     }
 
@@ -54,14 +54,10 @@ public class Task {
         this.date = date;
     }
 
-    public int getDone() {
+    public boolean getDone() {
         return done;
     }
 
-    public void setDone() {
-        if(this.done==1) this.done=0;
-        else this.done=1;
-    }
 
     @Override
     public String toString() {

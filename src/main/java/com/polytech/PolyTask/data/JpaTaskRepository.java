@@ -53,7 +53,7 @@ public class JpaTaskRepository implements TaskRepository{
     @Override
     public void done(int id) {
         Task task = entityManager.find(Task.class,id);
-        task.setDone();
+        task.setDone(!task.getDone());
     }
 
     @Transactional

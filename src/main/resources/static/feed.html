@@ -57,7 +57,7 @@
                                 {{y.date}}
                             </div>
                             <div class="checkbox">
-                                <input type="checkbox" id="checkbox" ng-checked="task.done"/>
+                                <input type="checkbox" id="checkbox" ng-checked="y.done" ng-click="done(y.id)"/>
                                 <label for="checkbox">
                                     {{y.content}}
                                 </label>
