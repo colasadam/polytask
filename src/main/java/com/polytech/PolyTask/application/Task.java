@@ -23,7 +23,7 @@ public class Task {
     private int done;
 
     @Column(name="date")
-    private Date date;
+    private String date;
 
     public Task(int id, String content) {
         this.id = id;
@@ -46,14 +46,13 @@ public class Task {
         this.done = done;
     }
 
-    public Date getDate() {
+    public String getDate() {
         return date;
     }
 
-    public void setDate(Date date) {
+    public void setDate(String date) {
         this.date = date;
     }
-
 
     public int getDone() {
         return done;

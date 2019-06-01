@@ -11,12 +11,20 @@ angular.module('PolyTask', []).controller('MainController',function($scope,$http
         console.error('Error get : ' + response.error);
     });
 
-
     $scope.createTask = function(){
+        var todayTime = new Date();
+        console.log(todayTime)
+        var date = todayTime.toLocaleDateString()
+        console.log(date)
+
+        var task ={
+            content : $scope.task.text,
+            date : date
+        }
         $http({
             method: 'POST',
             url: '/task/',
-            data : $scope.task.text
+            data : task
         }).then(function successCallback(response) {
             $scope.task = {};
             $scope.laliste = response.data;

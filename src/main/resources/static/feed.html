@@ -53,13 +53,15 @@
                     </div>
                     <ul class="list-group" ng-repeat="y in laliste">
                         <li class="list-group-item" >
+                            <div class="pull-left">
+                                <label for="checkbox">
+                                    {{y.date}}
+                                </label>
+                            </div>
                             <div class="checkbox mb-3">
                                 <input type="checkbox" id="checkbox" ng-checked="y.done"/>
                                 <label for="checkbox">
                                     {{y.content}}
-                                </label>
-                                <label for="checkbox">
-                                    {{y.date}}
                                 </label>
                             </div>
                             <div class="pull-right action-buttons">

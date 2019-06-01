@@ -1354,49 +1354,54 @@ authority</ColNames>
       <DataType>varchar(255)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="338" parent="327" name="task_users_username_fk">
+    <column id="338" parent="327" name="date">
+      <Position>5</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="339" parent="327" name="task_users_username_fk">
       <ColNames>username</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="339" parent="327" name="PRIMARY">
+    <key id="340" parent="327" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="340" parent="327" name="task_users_username_fk">
+    <foreign-key id="341" parent="327" name="task_users_username_fk">
       <ColNames>username</ColNames>
       <RefSchemaName>fatevald_polytask</RefSchemaName>
       <RefTableName>users</RefTableName>
       <RefColNames>username</RefColNames>
     </foreign-key>
-    <column id="341" parent="328" name="username">
+    <column id="342" parent="328" name="username">
       <Position>1</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="342" parent="328" name="password">
+    <column id="343" parent="328" name="password">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="343" parent="328" name="enabled">
+    <column id="344" parent="328" name="enabled">
       <Position>3</Position>
       <DataType>tinyint(1)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="344" parent="328" name="users_username_uindex">
+    <index id="345" parent="328" name="users_username_uindex">
       <ColNames>username</ColNames>
       <Unique>1</Unique>
       <Type>btree</Type>
     </index>
-    <key id="345" parent="328" name="PRIMARY">
+    <key id="346" parent="328" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>username</ColNames>
       <Primary>1</Primary>
     </key>
-    <key id="346" parent="328" name="users_username_uindex">
+    <key id="347" parent="328" name="users_username_uindex">
       <ColNames>username</ColNames>
       <UnderlyingIndexName>users_username_uindex</UnderlyingIndexName>
     </key>
