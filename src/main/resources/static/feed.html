@@ -58,7 +58,7 @@
                             </div>
                             <div class="checkbox mb-3">
                                 <input type="checkbox" id="checkbox" ng-checked="y.done" ng-click="done(y.id)"/>
-                                <label>
+                                <label ng-click="done(y.id)">
                                     {{y.content}}
                                 </label>
                             </div>
